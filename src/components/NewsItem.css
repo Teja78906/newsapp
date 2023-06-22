@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in;
+  }
+  
+  .card.rotated {
+    transform: rotateY(180deg);
+  }
+  
+  .card-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-buttons .rotate-left,
+  .card-buttons .rotate-right {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 1s ease-in;
+  }
+  
+  .card-buttons .rotate-left:hover,
+  .card-buttons .rotate-right:hover {
+    transform: scale(1.1);
+  }
+  
