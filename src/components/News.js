@@ -52,7 +52,7 @@ document.title = `${this.capitalizeFirstLetter(props.category)} - NewsMonkey`
     return (
       <div className="container-fluid backGround-image mt-5"  >
         <div className="row">
-        <h2 className="text-center mt-3" style={{color:'ButtonDark'}}>Top {this.capitalizeFirstLetter(this.props.category)} headlines </h2><br></br>
+        <h2 className="text-center mt-3" style={{color:'ButtonHighlight'}}>Top {this.capitalizeFirstLetter(this.props.category)} headlines </h2><br></br>
         </div>
          <InfiniteScroll
          dataLength = {this.state.articles.length}
