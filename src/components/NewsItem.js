@@ -15,7 +15,7 @@ const NewsItem = ({ title, description, imageUrl, newsUrl, author, date, source 
 
   return (
     <div className="my-3">
-      <div className='card text-white bg-dark' style={{ transform: `rotateY(${rotationAngle}deg)`, boxShadow: '0px 2px 8px 0px black'}}>
+      <div className='card bg-dark text-white' style={{ transform: `rotateY(${rotationAngle}deg)`, boxShadow: '4px 8px 14px 0px black'}}>
         <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{left:'90%', zIndex:'1'}}>
           {source ? source : "UnKnown"}
         </span>
