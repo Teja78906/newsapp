@@ -22,8 +22,8 @@ This is a React-based News App that fetches mini news JSON objects from a News A
 
 To run the React News App on your local machine, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/react-news-app.git`
-2. Navigate to the project directory: `cd react-news-app`
+1. Clone the repository: `git clone https://github.com/Teja78906/newsapp.git`
+2. Navigate to the project directory: `cd newsapp`
 3. Install the dependencies: `npm install`
 4. Obtain an API key from the News API provider (e.g., https://newsapi.org/)
 5. Create a `.env` file in the root directory and add your API key: `REACT_APP_API_KEY=your-api-key`
