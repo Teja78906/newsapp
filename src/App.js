@@ -9,6 +9,7 @@ import {
   Routes,
   Route,
 }from "react-router-dom";
+const apikey = process.env.REACT_APP_NEWS_API;
 export default class App extends Component {
   render() {
     return (
@@ -17,16 +18,16 @@ export default class App extends Component {
         <NavBar/>
           
         <Routes>
-  <Route path="/newsapp" element={ <News key="startPage" pageSize={10} country="in" category="general" /> } />
-  <Route path="/" element={ <News key="home" pageSize={10} country="in" category="general" /> }/>
-  <Route path="/Entertainment" element={ <News key="entertainment" pageSize={10} country="in" category="entertainment" />}/>
-  <Route path="/Sports" element={ <News key="sports" pageSize={10} country="in" category="sports" />}/>
-  <Route path="/Science" element={ <News key="science" pageSize={10} country="in" category="science" />}/>
+  <Route path="/newsapp" element={ <News key="startPage" apikey={apikey} pageSize={10} country="in" category="general" /> } />
+  <Route path="/" element={ <News key="home" apikey={apikey} pageSize={10} country="in" category="general" /> }/>
+  <Route path="/Entertainment" element={ <News key="entertainment" apikey={apikey} pageSize={10} country="in" category="entertainment" />}/>
+  <Route path="/Sports" element={ <News key="sports" apikey={apikey} pageSize={10} country="in" category="sports" />}/>
+  <Route path="/Science" element={ <News key="science" apikey={apikey} pageSize={10} country="in" category="science" />}/>
   <Route path="/About" element={ <About/>}/>
-  <Route path="/Business" element={ <News key="business" pageSize={10} country="in" category="business" /> }/>
-  <Route path="/General" element={ <News key="general" pageSize={10} country="in" category="general" />}/>
-  <Route path="/Health" element={ <News key="health" pageSize={10} country="in" category="health" /> }/>
-  <Route path="/Technology" element={ <News key="technology" pageSize={10} country="in" category="technology" /> }/>
+  <Route path="/Business" element={ <News key="business" apikey={apikey} pageSize={10} country="in" category="business" /> }/>
+  <Route path="/General" element={ <News key="general" apikey={apikey} pageSize={10} country="in" category="general" />}/>
+  <Route path="/Health" element={ <News key="health" apikey={apikey} pageSize={10} country="in" category="health" /> }/>
+  <Route path="/Technology" element={ <News key="technology" apikey={apikey} pageSize={10} country="in" category="technology" /> }/>
   
 </Routes>
 

@@ -19,14 +19,14 @@ export class News extends Component {
       loading: false,
       page:1,
       totalArticles:0,
-      imageUrl: "https://cdn.vox-cdn.com/thumbor/2NoQ-Bjs4w7vUDYX2c6xCXE6Xpo=/0x0:1593x1062/1200x628/filters:focal(797x531:798x532)/cdn.vox-cdn.com/uploads/chorus_asset/file/24674677/maxhome.jpg",
+      imageUrl: "https://tinyhousetalk.com/wp-content/uploads/the-eNook-electric-camper-van-collaboration-with-Maxwell-Vehicles-ePro-chassis.jpg",
       Url: "https://www.engadget.com/apple-strikes-multibillion-dollar-deal-with-broadcom-for-5g-parts-144545299.html"
     }
 document.title = `${this.capitalizeFirstLetter(props.category)} - NewsMonkey`
   }
   
   async componentDidMount(){
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=34a3a452fd68494ca8bceb0b01522d95&page=1&pagesize=${this.props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apikey}&page=1&pagesize=${this.props.pageSize}`;
     this.setState({loading:true});
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -38,7 +38,7 @@ document.title = `${this.capitalizeFirstLetter(props.category)} - NewsMonkey`
   }
   fetchMoreData = async ()=> {
     this.setState({page:this.state.page+1})
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=34a3a452fd68494ca8bceb0b01522d95&page=${this.state.page}&pagesize=${this.props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apikey}&page=${this.state.page}&pagesize=${this.props.pageSize}`;
     this.setState({loading:true});
     let data = await fetch(url);
     let parsedData = await data.json();
