@@ -28,15 +28,16 @@ export class NavBar extends Component {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-lg-0">
-                <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                <li className="nav-item">
+                  <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/health">
+                  <Link className="nav-link" to="/Health">
                     Health
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/general">
+                  <Link className="nav-link" to="/General">
                     General
                   </Link>
                 </li>
@@ -68,7 +69,7 @@ export class NavBar extends Component {
               </ul>
               <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" to="/About">
                   About
                 </Link>
               </li>

@@ -62,8 +62,8 @@ document.title = `${this.capitalizeFirstLetter(props.category)} - NewsMonkey`
          >
           <div className="container">
         <div className="row">
-        { this.state.articles.map((element)=>{
-          return <div className="col-md-4 mt-3" key={element.url} >
+        { this.state.articles.map((element,index)=>{
+          return <div className="col-md-4 mt-3" key={`${element.url}-${index}`} >
           <NewsItem title={element.title?element.title:""} description={element.description?element.description:""} imageUrl={element.urlToImage?element.urlToImage:this.state.imageUrl} newsUrl={element.url?element.url:this.state.Url} 
           author={element.author} date={element.publishedAt} source={element.source.name}/>
         </div>
