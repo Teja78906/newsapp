@@ -1,7 +1,7 @@
 # newsapp
 
 This is a React-based News App that fetches mini news JSON objects from a News API and displays them in a user-friendly format.
-![webpage overview](./images/webpage.png)
+![webpage overview](./Screenshot 2023-06-22 221440.png)
 
 ## Features
 
