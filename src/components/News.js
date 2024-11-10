@@ -5,7 +5,7 @@ import InfiniteScroll from "react-infinite-scroll-component"
 import './News.css';
 export class News extends Component {
   static defaultProps = {
-    country: 'in',
+    country: 'us',
     pageSize: 8
   }
   capitalizeFirstLetter = (string)=> {
@@ -54,12 +54,14 @@ document.title = `${this.capitalizeFirstLetter(props.category)} - NewsMonkey`
         <div className="row">
         <h2 className="text-center mt-3" style={{color:'ButtonHighlight'}}>Top {this.capitalizeFirstLetter(this.props.category)} headlines </h2><br></br>
         </div>
-         <InfiniteScroll
-         dataLength = {this.state.articles.length}
-         next={this.fetchMoreData}
-         hasMore={this.state.totalArticles !== this.state.articles.length}
-         loader={<Spinner/>}
-         >
+        <InfiniteScroll
+          dataLength={this.state.articles.length}
+          next={this.fetchMoreData}
+          hasMore={this.state.totalArticles !== this.state.articles.length}
+          loader={<Spinner />}
+          scrollableTarget="window" // This allows the component to listen to the window scroll
+        >
+
           <div className="container">
         <div className="row">
         { this.state.articles.map((element,index)=>{
