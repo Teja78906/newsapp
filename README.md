@@ -1,6 +1,10 @@
 # newsapp
 
 This is a React-based News App that fetches mini news JSON objects from a News API and displays them in a user-friendly format.
+<<<<<<< HEAD
+=======
+![webpage overview](./newsappOverrview.png)
+>>>>>>> b8dc11b6d13b2e1a2c7597bfed3c9cb7dd26f55e
 
 ## Features
 
@@ -45,4 +49,8 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ---
 
+<<<<<<< HEAD
 Feel free to customize this README file according to your specific project details, architecture, and additional features. Provide clear instructions on how to run the application locally, and mention any configuration options or dependencies that need to be set up.
+=======
+Feel free to customize this README file according to your specific project details, architecture, and additional features. Provide clear instructions on how to run the application locally, and mention any configuration options or dependencies that need to be set up.
+>>>>>>> b8dc11b6d13b2e1a2c7597bfed3c9cb7dd26f55e

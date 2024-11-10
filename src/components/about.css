@@ -1,0 +1,14 @@
+.backGround-image {
+  background-image: url("https://wallpapercave.com/dwp2x/wp8692907.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-y: scroll;
+}
+
+.container {
+    
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
